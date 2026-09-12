@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flavio Monteiro — Projetos & Design Mecânico</title>
+<meta name="description" content="Portfólio de projetos de engenharia mecânica em Fusion 360, Solid Edge e SolidWorks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">FM</span>
+      <span class="brand-text">Flavio Monteiro</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Engenharia Mecânica</p>
+      <h1 class="hero-title">Flavio Monteiro</h1>
+      <p class="hero-subtitle">Projetos &amp; Design Mecânico</p>
+      <p class="hero-desc">Modelagem 3D, desenho técnico e desenvolvimento de peças e conjuntos em <strong>Fusion 360</strong>, <strong>Solid Edge</strong> e <strong>SolidWorks</strong>.</p>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+        <a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-diagram" aria-hidden="true">
+      <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="160" cy="160" r="110" fill="none" stroke="var(--blue)" stroke-width="1.2"/>
+        <circle cx="160" cy="160" r="70" fill="none" stroke="var(--copper)" stroke-width="1.2"/>
+        <line x1="160" y1="20" x2="160" y2="300" stroke="var(--steel)" stroke-width="0.75" stroke-dasharray="6 6"/>
+        <line x1="20" y1="160" x2="300" y2="160" stroke="var(--steel)" stroke-width="0.75" stroke-dasharray="6 6"/>
+        <line x1="160" y1="50" x2="160" y2="80" stroke="var(--ink)" stroke-width="1.4"/>
+        <line x1="160" y1="240" x2="160" y2="270" stroke="var(--ink)" stroke-width="1.4"/>
+        <text x="168" y="48" class="dim-label">⌀140</text>
+        <text x="168" y="105" class="dim-label">⌀220</text>
+      </svg>
+    </div>
+  </section>
+
+  <section id="sobre" class="section about">
+    <div class="section-head">
+      <span class="sheet-tag">01</span>
+      <h2>Sobre</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text">
+        Sou estudante/profissional de engenharia mecânica com foco em modelagem 3D, projeto de peças e
+        desenvolvimento de conjuntos mecânicos. Este portfólio reúne alguns dos projetos que desenvolvi,
+        do esboço inicial ao modelo final, passando por escolha de materiais, tolerâncias e montagem.
+        <br><br>
+        Edite este texto em <code>index.html</code> para contar sua trajetória, formação e áreas de interesse
+        dentro da engenharia mecânica.
+      </p>
+      <ul class="tool-list">
+        <li><span class="tool-name">Fusion 360</span><span class="tool-role">Modelagem paramétrica &amp; simulação</span></li>
+        <li><span class="tool-name">Solid Edge</span><span class="tool-role">Projeto de peças &amp; conjuntos</span></li>
+        <li><span class="tool-name">SolidWorks</span><span class="tool-role">Desenho técnico &amp; detalhamento</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projetos" class="section projects">
+    <div class="section-head">
+      <span class="sheet-tag">02</span>
+      <h2>Projetos</h2>
+    </div>
+    <p class="section-note">Clique em uma folha para ampliar a imagem.</p>
+    <div id="project-grid" class="project-grid"></div>
+  </section>
+
+  <section id="contato" class="section contact">
+    <div class="section-head">
+      <span class="sheet-tag">03</span>
+      <h2>Contato</h2>
+    </div>
+    <div class="contact-block">
+      <p>Aberto a oportunidades e projetos em engenharia mecânica e design de produto.</p>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a>
+        <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="titleblock">
+    <div class="titleblock-cell"><span class="tb-label">Nome</span>Flavio Monteiro</div>
+    <div class="titleblock-cell"><span class="tb-label">Projeto</span>Projetos &amp; Design Mecânico</div>
+    <div class="titleblock-cell"><span class="tb-label">Folha</span>1/1</div>
+    <div class="titleblock-cell"><span class="tb-label">Ano</span><span id="year"></span></div>
+  </div>
+</footer>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button id="lightbox-close" class="lightbox-close" aria-label="Fechar">×</button>
+  <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-caption"></p>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
