@@ -299,6 +299,9 @@ code {
   z-index: 100;
   padding: 40px 20px;
 }
+.lightbox[hidden] {
+  display: none;
+}
 .lightbox img {
   max-width: min(90vw, 1000px);
   max-height: 78vh;
