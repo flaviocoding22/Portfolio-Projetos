@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#dde1e4"/>
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#647684" stroke-width="1.5"/>
+  <g stroke="#c3cad0" stroke-width="1">
+    <line x1="20" y1="150" x2="780" y2="150"/>
+    <line x1="20" y1="300" x2="780" y2="300"/>
+    <line x1="20" y1="450" x2="780" y2="450"/>
+    <line x1="200" y1="20" x2="200" y2="580"/>
+    <line x1="400" y1="20" x2="400" y2="580"/>
+    <line x1="600" y1="20" x2="600" y2="580"/>
+  </g>
+  <circle cx="400" cy="300" r="90" fill="none" stroke="#1E3A5F" stroke-width="2"/>
+  <circle cx="400" cy="300" r="4" fill="#B5651D"/>
+  <text x="400" y="300" text-anchor="middle" dy="130" font-family="monospace" font-size="18" fill="#647684">Substitua por sua imagem</text>
+</svg>
